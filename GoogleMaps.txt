@@ -1,0 +1,11 @@
+MD5 - 51:8D:A4:54:1E:54:71:E1:21:5F:0F:24:31:BA:A7:18
+
+GoogleMaps Key: 0_eRKCTwM4ranwGgIjC0Jh9PR-2bBVOIREztZDw
+
+<com.google.android.maps.MapView
+ android:layout_width="fill_parent"
+ android:layout_height="fill_parent"
+ android:enabled="true"
+ android:clickable="true"
+ android:apiKey="example_Maps_ApiKey_String"
+ />
