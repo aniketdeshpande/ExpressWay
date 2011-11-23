@@ -12,5 +12,12 @@
         android:clickable="true"
         android:apiKey="0_eRKCTwM4ranwGgIjC0Jh9PR-2bBVOIREztZDw"
     />
-
+	<!--  
+	<LinearLayout android:id="@+id/zoom"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_centerHorizontal="true"
+	/>
+	-->
 </RelativeLayout>
