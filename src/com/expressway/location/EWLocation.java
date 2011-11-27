@@ -12,3 +12,4 @@ public class EWLocation {
 		this.time = System.currentTimeMillis();
 	}
 }
+ 
