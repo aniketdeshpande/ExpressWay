@@ -92,26 +92,26 @@ public class ExpressWayActivity extends MapActivity {
 		
 		@Override
 		public void onLocationChanged(Location location) {
-			lat = (int) (location.getLatitude() * 1E6);
-			lng = (int) (location.getLongitude() * 1E6);
-			point = new GeoPoint(lat, lng);
-			mapController.animateTo(point); //
-			mapController.setZoom(16);
-			//mapView.displayZoomControls(true);
-			//mapController.setCenter(point);	
-			//mapController.zoomToSpan(lat, lng);
-			
-			PointerOverlay pointer=new PointerOverlay();
-			List<Overlay> listOfOverlays=mapView.getOverlays();
-			listOfOverlays.clear();
-			listOfOverlays.add(pointer);
-			mapView.invalidate();
-			
-			AWSCredentials cred = new BasicAWSCredentials("AKIAIKU7JE6HDBL2NG7A", "A79SupRoiOMSmQQaQG7bLEorVoQAYBa2qYdl8DX9");
-			
-			AmazonSQSClient sqs = new AmazonSQSClient(cred);
-			
-			sqs.sendMessage(new SendMessageRequest("https://ap-southeast-1.queue.amazonaws.com/471848172502/INPUTQUEUE", lat + "---" + lng));
+//			lat = (int) (location.getLatitude() * 1E6);
+//			lng = (int) (location.getLongitude() * 1E6);
+//			point = new GeoPoint(lat, lng);
+//			mapController.animateTo(point); //
+//			mapController.setZoom(16);
+//			//mapView.displayZoomControls(true);
+//			//mapController.setCenter(point);	
+//			//mapController.zoomToSpan(lat, lng);
+//			
+//			PointerOverlay pointer=new PointerOverlay();
+//			List<Overlay> listOfOverlays=mapView.getOverlays();
+//			listOfOverlays.clear();
+//			listOfOverlays.add(pointer);
+//			mapView.invalidate();
+//			
+//			AWSCredentials cred = new BasicAWSCredentials("AKIAIKU7JE6HDBL2NG7A", "A79SupRoiOMSmQQaQG7bLEorVoQAYBa2qYdl8DX9");
+//			
+//			AmazonSQSClient sqs = new AmazonSQSClient(cred);
+//			
+//			sqs.sendMessage(new SendMessageRequest("https://ap-southeast-1.queue.amazonaws.com/471848172502/INPUTQUEUE", lat + "---" + lng));
 		}
 
 		@Override
