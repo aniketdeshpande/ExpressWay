@@ -1,0 +1,4 @@
+#!/bin/zsh
+while (( 1 < 3 )); do
+ php get_coords.php
+done
