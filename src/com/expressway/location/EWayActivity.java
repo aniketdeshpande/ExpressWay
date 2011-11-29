@@ -16,13 +16,13 @@ public class EWayActivity extends Activity {
 	
 	private EWLocations _locations;
 	
-	public void locationChanged(EWLocation location) {
-        info(String.valueOf(location.lat) + "---" +
-        		String.valueOf(location.lon) + "---" +
-        		String.valueOf(location.time));
-	}
+//	public void locationChanged(EWLocation location) {
+//        info(String.valueOf(location.lat) + "---" +
+//        		String.valueOf(location.lon) + "---" +
+//        		String.valueOf(location.time));
+//	}
 	
-	private void info(String msg) {
+	public void info(String msg) {
         TextView myText = (TextView) findViewById(R.id.txtInfo);
         myText.setText(msg);
 	}
@@ -32,7 +32,7 @@ public class EWayActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        info("v3");
+        info("v4 - 29/11/2011");
         LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 		locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0,
 				0, new GeoUpdateHandler());				
@@ -86,4 +86,4 @@ public class EWayActivity extends Activity {
     
     
     
-} 
+}
